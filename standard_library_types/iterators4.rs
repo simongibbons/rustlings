@@ -9,13 +9,23 @@ pub fn factorial(num: u64) -> u64 {
     // - recursion
     // Scroll down for hints.
 
+//    ---- Iterative approach ----
+//    let mut result = 1;
+//    for i in 1..num + 1 {
+//        result *= i
+//    }
+//    result
+
 //    --- Recursive approach ---
 //    match num {
 //        0 => 1,
 //        _ => num * factorial(num - 1)
 //    }
 
-
+    // --- Iterator and range approach
+    (1..num + 1).
+        into_iter().
+        fold(1, |product, i| product * i)
 }
 
 #[cfg(test)]

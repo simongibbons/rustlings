@@ -8,7 +8,7 @@ use std::thread;
 
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
-    let shared_numbers = Arc::from(&numbers);
+    let shared_numbers: Arc<Vec<u32>> = Arc::from(numbers);
     let mut joinhandles = Vec::new();
 
     for offset in 0..8 {
