@@ -6,11 +6,15 @@
 fn main() {
     let mut list = vec![3];
 
-    let last = list.pop().unwrap();
-    println!("The last item in the list is {:?}", last);
+    match list.pop() {
+        Some(last) => println!("The last item in the list is {:?}", last),
+        None => println!("The list is empty.")
+    }
 
-    let second_to_last = list.pop().unwrap();
-    println!("The second-to-last item in the list is {:?}", second_to_last);
+    match list.pop() {
+        Some(second_to_last) => println!("The second-to-last item in the list is {:?}", second_to_last),
+        None => println!("The list is empty.")
+    }
 }
 
 

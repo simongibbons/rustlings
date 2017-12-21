@@ -8,6 +8,14 @@ pub fn factorial(num: u64) -> u64 {
     // For the most fun don't use:
     // - recursion
     // Scroll down for hints.
+
+//    --- Recursive approach ---
+//    match num {
+//        0 => 1,
+//        _ => num * factorial(num - 1)
+//    }
+
+
 }
 
 #[cfg(test)]

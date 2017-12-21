@@ -5,20 +5,17 @@ fn main() {
     // Characters (`char`)
 
     let my_first_initial = 'C';
-    if my_first_initial.is_alphabetic() {
-        println!("Alphabetical!");
-    } else if my_first_initial.is_numeric() {
-        println!("Numerical!");
-    } else {
-        println!("Neither alphabetic nor numeric!");
-    }
+    print_character_class(my_first_initial);
 
-    let // Finish this line like the example! What's your favorite character?
-    // Try a letter, try a number, try a special character, try a character
-    // from a different language than your own, try an emoji!
-    if your_character.is_alphabetic() {
+    let your_character = '🤔';
+    print_character_class(your_character);
+}
+
+
+fn print_character_class(character: char) {
+    if character.is_alphabetic() {
         println!("Alphabetical!");
-    } else if your_character.is_numeric() {
+    } else if character.is_numeric() {
         println!("Numerical!");
     } else {
         println!("Neither alphabetic nor numeric!");
