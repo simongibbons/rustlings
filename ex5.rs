@@ -1,5 +1,6 @@
 // Make me compile!
 
+#[derive(Copy, Clone)]
 enum Reaction<'a> {
     Sad(&'a str),
     Happy(&'a str),
